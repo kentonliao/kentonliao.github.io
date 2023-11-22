@@ -1,0 +1,177 @@
+/* Custom styles for the resume */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #726a95; /* 較低飽和度的紫色 */
+    color: #fff;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Profile picture styles */
+.profile-picture {
+    width: 25%; /* 初始寬度為電腦上的 25% */
+
+    /* 媒體查詢：手機 */
+    @media (max-width: 767px) {
+        width: 40%; /* 在手機上調整為 40% */
+    }
+}
+
+/* Main sections styles */
+section {
+    text-align: center;
+    padding: 3em 0;
+}
+
+/* Timeline styles */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.timeline-content {
+    background-color: #dcd7e6; /* 較低飽和度的淡紫色 */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    text-align: left;
+}
+
+/* Skill list styles */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-list span {
+    background-color: #726a95; /* 較低飽和度的紫色 */
+    color: #fff;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+/* Project card styles */
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcd7e6; /* 較低飽和度的淡紫色 */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-info {
+    padding: 1em;
+    width: 100%;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #726a95; /* 較低飽和度的紫色 */
+    color: #fff;
+    padding: 5em 0;
+}
+
+.social-link {
+    font-size: 3em; /* 調整字型大小，你可以根據需要調整這個值 */
+    margin: 0 10px; /* 加入一些邊距，使得圖示之間有一些間隔 */
+}
+
+/* Footer styles */
+footer {
+    background-color: #726a95; /* 較低飽和度的紫色 */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Animation styles using wow.js */
+.animated {
+    visibility: hidden;
+}
+
+/* You can add more specific animations for different elements */
+.fadeIn {
+    animation: fadeIn 1s forwards;
+}
+
+.fadeInDown {
+    animation: fadeInDown 1s forwards;
+}
+
+.fadeInUp {
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+    }
+
+    .project-card img {
+        border-radius: 0;
+    }
+}
