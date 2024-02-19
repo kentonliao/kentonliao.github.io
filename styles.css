@@ -1,0 +1,65 @@
+.profile-picture {
+    width: 20%;
+
+    @media (max-width: 720px) {
+        width: 40%;
+    }
+}
+
+.social-link {
+    font-size: 2.5em;
+    margin: 0 10px;
+}
+
+#mycarousel {
+    width: 75%;
+    text-align: center;
+
+    @media (max-width: 720px) {
+        width: 100%;
+    }
+}
+
+.mysection {
+    width: 75%;
+    text-align: center;
+
+    @media (max-width: 720px) {
+        width: 100%;
+    }
+}
+
+.mygame {
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+
+    @media (max-width: 720px) {
+        width: 100%;
+    }
+}
+
+header {
+    background: #726A95;
+}
+
+header h1 {
+    color: white;
+}
+
+header p {
+    color: #F4E8C1;
+}
+
+header a {
+    color: aqua;
+}
+
+footer {
+    background: #351F39;
+    color: #EEEEEE;
+}
+
+#project h4 {
+    color: #726A95;
+}
